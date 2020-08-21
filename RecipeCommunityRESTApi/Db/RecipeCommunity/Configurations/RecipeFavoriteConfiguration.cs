@@ -8,7 +8,7 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
     {
         public void Configure(EntityTypeBuilder<RecipeFavorite> builder)
         {
-            builder.Property(e => e.Id).ValueGeneratedNever();
+            builder.Property(e => e.Id);
         }
     }
 }

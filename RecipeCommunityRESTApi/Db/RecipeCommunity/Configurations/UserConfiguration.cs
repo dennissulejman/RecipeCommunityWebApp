@@ -14,7 +14,7 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
             builder.HasIndex(e => e.Username)
                 .IsUnique();
 
-            builder.Property(e => e.Id).ValueGeneratedNever();
+            builder.Property(e => e.Id);
 
             builder.Property(e => e.EmailAddress).IsRequired();
 

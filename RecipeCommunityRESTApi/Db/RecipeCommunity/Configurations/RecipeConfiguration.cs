@@ -8,7 +8,7 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
     {
         public void Configure(EntityTypeBuilder<Recipe> builder)
         {
-            builder.Property(e => e.Id).ValueGeneratedNever();
+            builder.Property(e => e.Id);
 
             builder.Property(e => e.CreationDate).IsRequired();
 
