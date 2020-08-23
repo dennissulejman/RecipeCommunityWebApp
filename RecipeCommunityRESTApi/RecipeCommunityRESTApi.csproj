@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>26a52f60-6091-4c98-b0cc-50fdd9b72c06</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <None Update="RecipeCommunityDb.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 
