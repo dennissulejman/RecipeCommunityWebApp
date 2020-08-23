@@ -24,7 +24,7 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity
         public virtual DbSet<RecipeIngredient> RecipeIngredients { get; set; }
         public virtual DbSet<Recipe> Recipes { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Vegetable> Vegetables { get; set; }
+        public virtual DbSet<Ingredient> Ingredients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
