@@ -4,9 +4,9 @@ using RecipeCommunityRESTApi.Db.RecipeCommunity.Models;
 
 namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
 {
-    internal class VegetableConfiguration : IEntityTypeConfiguration<Vegetable>
+    internal class IngredientConfiguration : IEntityTypeConfiguration<Ingredient>
     {
-        public void Configure(EntityTypeBuilder<Vegetable> builder)
+        public void Configure(EntityTypeBuilder<Ingredient> builder)
         {
             builder.HasIndex(e => e.Name)
                     .IsUnique();
