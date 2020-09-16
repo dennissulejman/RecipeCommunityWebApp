@@ -9,7 +9,7 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasIndex(e => e.EmailAddress)
-                    .IsUnique();
+                .IsUnique();
 
             builder.HasIndex(e => e.Username)
                 .IsUnique();
@@ -21,6 +21,13 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
             builder.Property(e => e.PasswordHash).IsRequired();
 
             builder.Property(e => e.Username).IsRequired();
+
+            builder.HasMany(e => e.RecipeFavorites)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(e => e.CreatedRecipes)
+                .WithOne();
         }
     }
 }

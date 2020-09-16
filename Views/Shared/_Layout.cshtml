@@ -18,7 +18,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <form class="form-inline my-2 my-lg-0" asp-controller="Recipes" asp-action="RecipeSearch">
-                        <input class="form-control mr-sm-2" id="RecipeSearch" name="RecipeSearchInput" placeholder="Search For Recipes" />
+                        <input class="form-control mr-sm-2" id="RecipeSearch" name="@Constants.RecipesSearchInput" placeholder="Search For Recipes" />
                     </form>
                     <a class="nav-link text-dark" asp-area="" asp-controller="Recipes" asp-action="RecipeBrowser">Browse Recipes</a>
                 </div>

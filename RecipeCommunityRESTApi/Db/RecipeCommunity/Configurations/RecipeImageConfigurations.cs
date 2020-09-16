@@ -8,9 +8,9 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
     {
         public void Configure(EntityTypeBuilder<RecipeImage> builder)
         {
-            builder.HasNoKey();
+            builder.HasKey(e => new { e.RecipeId });
 
-            builder.Property(e => e.Image).IsRequired();
+            builder.Property(e => e.ImagePath).IsRequired();
         }
     }
 }

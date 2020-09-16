@@ -9,6 +9,12 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
         public void Configure(EntityTypeBuilder<RecipeIngredient> builder)
         {
             builder.Property(e => e.Id);
+
+            builder.HasOne(e => e.Ingredient)
+                .WithOne();
+
+            builder.HasOne(e => e.Measurement)
+                .WithOne();
         }
     }
 }

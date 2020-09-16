@@ -13,6 +13,19 @@ namespace RecipeCommunityRESTApi.Db.RecipeCommunity.Configurations
             builder.Property(e => e.CreationDate).IsRequired();
 
             builder.Property(e => e.Name).IsRequired();
+
+            builder.HasOne(e => e.Cuisine)
+                .WithOne();
+
+            builder.HasMany(e => e.Images)
+                .WithOne()
+                .HasForeignKey(e => e.RecipeId)
+                .HasPrincipalKey(e => e.Id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(e => e.Ingredients)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

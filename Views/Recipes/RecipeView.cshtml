@@ -1,0 +1,10 @@
+﻿@model RecipeCommunityRESTApi.Db.RecipeCommunity.Models.Recipe
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="form-horizontal">
+    <p>@Model.Name</p>
+    <a asp-action="Edit" asp-route-Id="@Model.Id">Edit</a>
+</div>

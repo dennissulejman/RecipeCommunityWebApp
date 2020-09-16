@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeCommunityWebApp", "RecipeCommunityWebApp.csproj", "{605A2DA4-80A6-4232-9D18-DA704DD01B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeCommunityRESTApi", "RecipeCommunityRESTApi\RecipeCommunityRESTApi.csproj", "{1FF9B239-0FCB-44FB-BE2D-ED1872DB20AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeCommunityRESTApi", "RecipeCommunityRESTApi\RecipeCommunityRESTApi.csproj", "{1FF9B239-0FCB-44FB-BE2D-ED1872DB20AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeCommunityCommonLibrary", "RecipeCommunityCommonLibrary\RecipeCommunityCommonLibrary\RecipeCommunityCommonLibrary.csproj", "{3B7D7E4B-EFA7-407E-BAFD-2516C333210A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1FF9B239-0FCB-44FB-BE2D-ED1872DB20AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FF9B239-0FCB-44FB-BE2D-ED1872DB20AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FF9B239-0FCB-44FB-BE2D-ED1872DB20AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7D7E4B-EFA7-407E-BAFD-2516C333210A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7D7E4B-EFA7-407E-BAFD-2516C333210A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7D7E4B-EFA7-407E-BAFD-2516C333210A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7D7E4B-EFA7-407E-BAFD-2516C333210A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

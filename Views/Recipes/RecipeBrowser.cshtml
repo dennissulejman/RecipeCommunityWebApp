@@ -1,6 +1,7 @@
-﻿
+﻿@model IEnumerable<RecipeCommunityRESTApi.Db.RecipeCommunity.Models.Recipe>
+
 @{
-    ViewData["Title"] = "RecipeBrowser";
+    ViewData["Title"] = "Recipe Browser";
 }
 
     <p>
@@ -16,4 +17,31 @@
         <div class="collapse" id="collapseExampleNested">
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
         </div>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Cuisine
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var recipe in Model)
+                {
+                <tr>
+                    <td>
+                        <a asp-area="" asp-controller="Recipes" asp-action="RecipeView" asp-route-id="@recipe.Id">@Html.DisplayFor(modelItem => recipe.Name)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => recipe.Cuisine.Name)
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
     </div>
